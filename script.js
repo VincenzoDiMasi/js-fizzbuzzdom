@@ -32,7 +32,7 @@ for (let i = 1; i <= 100; i++) {
     if(i % 5 === 0){
         //se è divisibile anche per 5 stampo FizzBuzz
         targetElement.innerHTML += 
-        `<div class="col d-flex justify-content-center align-items-center py-3">
+        `<div class="col d-flex justify-content-center align-items-center text-center py-3">
             <div class="cs-box fizzbuzz">
                 FizzBuzz
             </div>
@@ -42,7 +42,7 @@ for (let i = 1; i <= 100; i++) {
     else{
          //se non è divisibile per 5 stampo Fizz
          targetElement.innerHTML += 
-         `<div class="col d-flex justify-content-center align-items-center py-3">
+         `<div class="col d-flex justify-content-center align-items-center text-center py-3">
              <div class="cs-box fizz">
                  Fizz
              </div>
@@ -50,7 +50,35 @@ for (let i = 1; i <= 100; i++) {
          console.log('Fizz');
 
     }
-} 
+
+
+
+    }   
+    
+    //Verifico se il numero sia divisibile per 3 
+    else if (i % 5 === 0){
+        //se è divisibile per 5 stampo Buzz
+        targetElement.innerHTML += 
+        `<div class="col d-flex justify-content-center align-items-center text-center py-3">
+            <div class="cs-box buzz">
+                Buzz
+            </div>
+        </div>`
+        console.log('Buzz');
+    } 
+
+    //Se non sono divisibili per 3 e/o 5 stampo il numero
+    else{
+        targetElement.innerHTML += 
+        `<div class="col d-flex justify-content-center align-items-center text-center py-3">
+            <div class="cs-box number">
+                ${i}
+            </div>
+        </div>`
+        console.log(i);
+    }
+
+
 
 
 }

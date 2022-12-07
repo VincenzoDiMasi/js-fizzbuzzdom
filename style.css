@@ -16,3 +16,28 @@
     height: 30px;
     
 }
+
+.cs-box{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 50px;
+    color: darkblue;
+    
+}
+
+.cs-box.number{
+    background-color: lightblue;
+}
+
+.cs-box.fizz{
+    background-color: gold;
+}
+
+.cs-box.buzz{
+    background-color: black;
+}
+
+.cs-box.fizzbuzz{
+    background-color: yellowgreen;
+}
